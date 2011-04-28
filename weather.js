@@ -6,7 +6,7 @@ var request = require('request');
 function Command() {
 	var self = this;
 	self.name = "Weather";
-	self.regex=/weather/i;
+	self.regex=/^weather/i;
 	// Retrieve this from: http://weather.yahoo.com/
 	self.woeid = "12796580";
 	self.location = "Aliso Viejo, CA";
